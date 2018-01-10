@@ -1,0 +1,36 @@
+{
+  "name": "erc20-token-transfer",
+  "version": "0.0.1",
+  "description": "## ERC20 Token Transfer",
+  "main": "truffle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aivanouski/erc20-token-transfer.git"
+  },
+  "author": "aivanouski",
+  "license": "LGPL-3.0",
+  "dependencies": {
+    "bignumber.js": "^4.1.0",
+    "bs58": "^4.0.1",
+    "buffer": "^5.0.6",
+    "eth-lightwallet": "^2.5.6",
+    "ethereumjs-testrpc": "3.0.5",
+    "extendable-error": "^0.1.5",
+    "optimist": "^0.6.1",
+    "q": "^1.5.0",
+    "truffle": "kkamiak/truffle#hotfix/input-params-check",
+    "truffle-artifactor": "2.1.5",
+    "truffle-hdwallet-provider": "github:mikefluff/truffle-hdwallet-provider"
+  },
+  "devDependencies": {
+    "@digix/contest": "^0.2.6",
+    "@digix/tempo": "^0.2.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "ethereumjs-wallet": "0.6.0",
+    "standard-version": "^4.0.0"
+  }
+}
