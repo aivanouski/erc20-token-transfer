@@ -8,12 +8,12 @@ module.exports = () => {
     const decimals = argv.decimals;
     const gaslimit = argv.gaslimit;
     const gwei = argv.gwei;
-    const address = argv.address;
     const amount = argv.amount;
     const token = argv.token;
     const inputSource = argv.source == null ? web3.currentProvider.getAddress() : argv.source;
 
     const normilaze = (str) => str.toString().startsWith("0x") ? str.toString() : "0x" + str.toString();
+    const address = normilaze(argv.address);
 
     if (inputSource == null || token == null || decimals == null || address == null || amount == null) {
         throw "Some of required parameters don't be set."
